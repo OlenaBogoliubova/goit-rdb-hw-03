@@ -1,0 +1,31 @@
+
+Homework 3 RDB
+
+1. SELECT * FROM `hw3`.`products` 
+
+    SELECT name,phone FROM `hw3`.`shippers` 
+
+2. SELECT avg(price) AS avg_price, max(price) AS max_price, min(price) AS min_price
+    FROM `hw3`.`products`
+
+3. SELECT distinct category_id, price FROM `hw3`.`products` order by price desc LIMIT 10
+
+4.  SELECT COUNT(*) AS prod_count
+     FROM `hw3`.`products`
+     WHERE price BETWEEN 20 AND 100;
+
+5. SELECT supplier_id,
+    count(*) AS prod_count,
+    avg(price) AS avg_price
+    FROM `hw3`.`products`
+    group by supplier_id;
+
+
+
+
+
+
+
+
+
+
